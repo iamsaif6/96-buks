@@ -2,9 +2,9 @@
 
 <br>
 
-<img src="https://github.com/iamsaif6/kallyas/blob/master/Screenshot%202021-06-02%20at%2012-06-48%20Kallyas%20Multi%20Page%20Website.png" width="800px" />
+<img src="https://github.com/iamsaif6/96-buks/blob/master/Screenshot%202021-06-06%20at%2010-19-45%2096Buks%20My%201st%20Adobe%20XD%20to%20Html.png" width="800px" />
 
-> ## For live preview : [Click Here](https://iamsaif6.github.io/kallyas/ "Kallyas")
+> ## For live preview : [Click Here](https://iamsaif6.github.io/96-buks/ "96 Buks")
 
  <br>
 
