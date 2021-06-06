@@ -1,0 +1,92 @@
+.qna{
+
+    padding-top: 25rem;
+
+    @include respond(1100px){
+        padding-top: 15rem;
+    }
+
+
+
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(35rem , 1fr));
+        align-items: center;
+        grid-gap: 7rem;
+
+        @include respond(700px){
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+    }
+
+    &__imgbox{
+        position: relative;
+    }
+
+    &__svg{
+
+        width: 100%;
+        height: auto;
+
+        @include respond(700px){
+            max-width: 40rem;
+        }
+
+        &-after{
+            position: absolute;
+            width: 200%;
+            right: -10%;
+            top: -20%;
+            z-index: -1;
+            height: auto;
+        }
+
+    }
+
+    &__textbox{
+        @include respond(700px){
+            grid-row: 1/2;
+            width: 80%;
+        } 
+    }
+
+    &__header{
+        font-family: "Segoe UI";
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+
+        @include respond(700px){
+            text-align: center;
+        }
+    }
+
+    .description{
+
+        position: relative;
+        padding-left: 3rem;
+
+        &::after{
+            position: absolute;
+            left: 0;
+            top: 1rem;
+            width: 1rem;
+            height: 1rem;
+            background-color: #FF7657;
+            content: '';
+            border-radius: 50%;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 3rem;
+
+            @include respond(700px){
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+
+}

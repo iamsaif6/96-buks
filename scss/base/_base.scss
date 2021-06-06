@@ -1,0 +1,71 @@
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+::selection{
+    background-color: #FF7657;
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    @include respond(1000px){
+        font-size: 50%;
+    }
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #48475C;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.row{
+    max-width: 114rem;
+    width: 90%;
+    margin:  0 auto;
+}
+
+.section-padding{
+    padding: 7rem 0;
+}
+
+.description{
+    font-family: "Segoe UI";
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+// Owl Settings
+
+
+.owl-carousel .owl-stage-outer{
+    overflow: visible;
+}
+
+.owl-item.active{
+    .testimonial__item{
+        box-shadow: 0px 3rem 4rem -2.4rem #FF7657;
+    }
+}

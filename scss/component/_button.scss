@@ -1,0 +1,53 @@
+.btn{
+
+    &,
+    &:link,
+    &:visited,
+    &:active{
+        font-family: "Segoe UI";
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-decoration: none;
+        color: #fff;
+        background-color: #FF7657;
+        padding: 1rem 3rem;
+        display: inline-block;
+        border-radius: 100px;
+        box-shadow: 0 2.3rem 1.8rem -1.2rem #FF7657;
+        outline: none;
+        transition: all .3s;
+    }
+
+    &:hover{
+        box-shadow: 0 2.3rem 3.8rem -1.2rem #FF7657;
+        transform: translateY(-2px);
+    }
+
+    &:active{
+        box-shadow: 0 2.3rem 1.8rem -1.2rem #FF7657;
+        transform: translateY(2px);
+    }
+
+    &--inline{
+
+        &,
+        &:link,
+        &:visited,
+        &:active{
+            outline: none;
+            text-decoration: none;
+            font-family: "Segoe UI";
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #48475C;
+            display: inline-block;
+            margin-top: 8rem;
+            transition: all .3s;
+            opacity: .5;
+        }
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+}

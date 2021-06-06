@@ -1,0 +1,66 @@
+.footer{
+
+    background-color: #FF7657;
+    padding: 6rem 0;
+    color: #fff;
+
+    &__grid{
+        max-width: 70rem;
+        margin:  0 auto;
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        grid-gap: 7rem;
+
+        @include respond(700px){
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2rem;
+        }
+    }
+
+    &__service{
+
+    }
+
+    &__address{
+
+    }
+
+    &__header{
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+
+    p{
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: .7rem;
+        font-family: "Segoe UI";
+        line-height: 1.8;
+    }
+
+    &__link{
+        &,
+        &:link,
+        &:visited,
+        &:active{
+            width: 4rem;
+            text-decoration: none;
+            height: 4rem;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: #fff;
+            text-align: center;
+            font-size: 2rem;
+            line-height: 2;
+            color: #FF7657;
+            margin-right: 1rem;
+            margin-top: 1.5rem;
+            transition: all .3s;
+        }
+
+        &:hover{
+            transform:rotate(360deg);
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.testimonial{
+
+    background-color: #FFF8F6;
+
+    &__wrap{
+        margin:  0 auto;
+        margin-top: 7rem;
+        font-family: "Segoe UI";
+        max-width: 70rem;
+        position: relative;
+
+        &::after,
+        &::before{
+            position: absolute;
+            content: '';
+            left: -150%;
+            top: 0;
+            width: 150%;
+            height: 100%;
+            background-color: #fff;
+            opacity: .4;
+        }
+
+        &::before{
+            left: auto;
+            right: -150%;
+            z-index: 9999;
+        }
+    }
+
+    &__item{
+        background-color: #FF7657;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        padding: 3.5rem 4rem;
+        border-radius: 20px;
+        grid-gap: 3rem;
+        transition: all .4s;
+
+        @include respond(400px){
+            padding: 2.5rem 3rem;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            grid-gap: 1.5rem;
+        }
+    }
+
+    &__img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-image: url(../img/joanna-nix-474910-unsplash.jpg);
+        background-size: 140%;
+        background-position: 55% 40%;
+        background-repeat: no-repeat;
+        border: 2px solid #fff;
+
+        &--2{
+            background-image: url(../img/sai-maddali-423413-unsplash.jpg);
+        }
+    }
+
+    &__text{
+        color: #fff;
+        @include respond(400px){
+            text-align: center;
+        }
+    }
+
+    &__name{
+        font-size: 2rem;
+        font-weight: 700;
+        
+    }
+
+    &__company{
+        font-size: 1.4rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__review{
+        font-size: 1.7rem;
+        font-style: italic;
+    }
+
+}

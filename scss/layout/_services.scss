@@ -1,0 +1,84 @@
+.services{
+    padding-top: 18rem;
+    padding-bottom: 13rem;
+
+    @include respond(1100px){
+        padding-top: 13rem;
+    }
+
+    @include respond(700px){
+        padding-top: 8rem;
+    }
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(18rem , 1fr));
+        align-items: center;
+        justify-items: center;
+        grid-gap: 7rem;
+        margin: auto;
+        margin-top: 13rem;
+        width: 80%;
+
+        @include respond(800px){
+            grid-template-columns: repeat(auto-fit , minmax(14rem , 1fr));
+        }
+
+        @include respond(600px){
+            width: 60%;
+            margin-top: 10rem;
+        }
+
+    }
+
+    &__item-wrap{
+        backface-visibility: hidden;
+
+    }
+
+    &__item-wrap:hover &__item,
+    &__item-wrap.active &__item{
+        background-color: #FF7657;
+        transform: scale(1.2);
+        cursor: pointer;
+
+        .services__item-svg{
+            path,
+            rect{
+                transition: all .4s;
+                fill: #fff !important;
+            }
+        }
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+        height: 15rem;
+        width: 15rem;
+        box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.103);
+        border-radius: 15%;
+        transition: all .3s;
+        backface-visibility: hidden;
+
+        &-svg{
+            width: 37%;
+            path{
+                transition: all .3s;
+            }
+        }
+    }
+
+    &__name{
+        font-family: "Segoe UI";
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+
+
+
+}

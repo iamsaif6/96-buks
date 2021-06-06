@@ -1,0 +1,96 @@
+.header{
+
+    padding: 7rem 0;
+    margin-top: 15rem;
+
+    @include respond(1100px){
+        padding: 5rem 0;
+    }
+
+
+    &__grid{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+
+        @include respond(900px){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include respond(800px){
+            grid-template-columns: 1fr;
+            grid-gap: 5rem;
+        }
+    }
+
+    &__textbox{
+        @include respond(800px){
+            text-align: center;
+            max-width: 60rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__imgbox{
+        justify-self: flex-end;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    &__svg{
+        width: 100%;
+        height: auto;
+
+        @include respond(1100px){
+            width: 80%;
+        }
+
+        @include respond(1000px){
+            width: 60%;
+        }
+    }
+
+    &__title{
+        font-family: "Segoe UI";
+        font-size: 3.5rem;
+        font-weight: 600;
+        margin-bottom: 4rem;
+
+        @include respond(800px){
+            margin-bottom: 5rem;
+        }
+
+
+        @include respond(600px){
+            width: 80%;
+            margin:  0 auto;
+            margin-bottom: 7rem;
+            font-weight: 400;
+        }
+    }
+
+    &__svg-after{
+        position: absolute;
+        left: 0;
+        top: 0%;
+        width: 200%;
+        transform: translateX(-15%);    
+        z-index: -1;
+        height: auto;
+
+        @include respond(1100px){
+            width: 150%;
+            top: -10%;
+            left: 10%;
+        }
+
+        @include respond(1000px){
+            left: 15%;
+            top: -20%;
+        }
+
+        
+    }
+}
